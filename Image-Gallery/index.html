@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+
+<div id="loader">
+
+    <div class="spinner"></div>
+
+    <h2>Loading Gallery...</h2>
+
+</div>
+
+    <!-- Animated Background -->
+    <div class="background"></div>
+
+    <!-- Header -->
+    <header>
+
+        <h1>Modern Image Gallery</h1>
+
+        <p>Explore beautiful moments with a modern responsive gallery.</p>
+
+        <div class="top-controls">
+
+            <!-- Search -->
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search images...">
+            </div>
+
+            <!-- Theme -->
+
+            <button id="themeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- Filter Buttons -->
+
+    <section class="filters">
+
+        <button class="active" data-filter="all">All</button>
+
+        <button data-filter="nature">Nature</button>
+
+        <button data-filter="city">City</button>
+
+        <button data-filter="animals">Animals</button>
+
+         <button data-filter="rain">Rain</button>
+
+    </section>
+
+    <div class="image-counter">
+    <h3 id="imageCount">Showing 0 Images</h3>
+</div>
+
+    
+
+    <!-- Gallery -->
+
+    <main class="gallery">
+
+        <div class="card nature" data-name="Green Forest">
+
+            <img src="images/nature1.jpg">
+
+            <div class="overlay">
+
+                <h3>Green Forest</h3>
+
+                <p>Nature</p>
+
+                <div class="icons">
+
+                    <button class="viewBtn">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+
+                    <button class="downloadBtn">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                    <button class="favBtn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card nature" data-name="Mountain Lake">
+
+            <img src="images/nature2.jpg">
+
+            <div class="overlay">
+
+                <h3>Mountain Lake</h3>
+
+                <p>Nature</p>
+
+                <div class="icons">
+
+                    <button class="viewBtn">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+
+                    <button class="downloadBtn">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                    <button class="favBtn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card city" data-name="Night City">
+
+            <img src="images/city1.jpg">
+
+            <div class="overlay">
+
+                <h3>Night City</h3>
+
+                <p>City</p>
+
+                <div class="icons">
+
+                    <button class="viewBtn">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+
+                    <button class="downloadBtn">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                    <button class="favBtn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card city" data-name="Street Lights">
+
+            <img src="images/city2.jpg">
+
+            <div class="overlay">
+
+                <h3>Street Lights</h3>
+
+                <p>City</p>
+
+                <div class="icons">
+
+                    <button class="viewBtn">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+
+                    <button class="downloadBtn">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                    <button class="favBtn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card animals" data-name="Cute Tiger">
+
+            <img src="images/animal1.jpg">
+
+            <div class="overlay">
+
+                <h3>Cute Tiger</h3>
+
+                <p>Animals</p>
+
+                <div class="icons">
+
+                    <button class="viewBtn">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+
+                    <button class="downloadBtn">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                    <button class="favBtn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card animals" data-name="Beautiful Bird">
+
+            <img src="images/animal2.jpg">
+
+            <div class="overlay">
+
+                <h3>Beautiful Bird</h3>
+
+                <p>Animals</p>
+
+                <div class="icons">
+
+                    <button class="viewBtn">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+
+                    <button class="downloadBtn">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                    <button class="favBtn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card rain" data-name="Rain Fall">
+
+            <img src="images/rain1.jpg">
+
+            <div class="overlay">
+
+                <h3>RainFall</h3>
+
+                <p>Rain</p>
+
+                <div class="icons">
+
+                    <button class="viewBtn">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+
+                    <button class="downloadBtn">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+
+                    <button class="favBtn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <!-- Lightbox -->
+
+    <div class="lightbox">
+
+        <span class="close">&times;</span>
+
+        <button class="prev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <img id="lightboxImage">
+
+        <button class="next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+    <!-- Scroll Top -->
+
+    <button id="scrollTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+    
+
+</body>
+
+</html>
